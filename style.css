@@ -8,6 +8,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 header {
@@ -41,8 +44,8 @@ nav ul li a:hover {
 }
 
 .hero {
-    height: 100vh;
-    background-image: url('background.jpg'); /* 替换为你自己的背景图片 */
+    flex-grow: 1; 
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -82,10 +85,12 @@ footer {
     background-color: #f1f1f1;
     font-size: 14px;
     color: #333;
+    width: 100%;
+    position: relative; 
 }
 
 footer a {
-    color: #007BFF; /* 链接颜色 */
+    color: #007BFF; 
     text-decoration: none;
 }
 
