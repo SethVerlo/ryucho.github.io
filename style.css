@@ -6,11 +6,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('background.jpg'); /* 将背景图片应用到整个页面 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 使背景图片在滚动时保持固定 */
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 header {
@@ -45,9 +48,6 @@ nav ul li a:hover {
 
 .hero {
     flex-grow: 1; /* 使主内容区域撑开页面 */
-    background-image: url('background.jpg'); /* 替换为你自己的背景图片 */
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,18 +79,20 @@ nav ul li a:hover {
     height: 30px;
 }
 
+/* Footer 部分无缝连接背景 */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: transparent; /* 保持透明背景，和整个页面一致 */
     font-size: 14px;
-    color: #333;
+    color: white; /* 保持文字颜色和页面一致 */
     width: 100%;
     position: relative;
+    bottom: 0;
 }
 
 footer a {
-    color: #007BFF; 
+    color: #007BFF;
     text-decoration: none;
 }
 
@@ -98,55 +100,55 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* -------- 媒体查询保持不变 -------- */
 
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* 将导航栏选项改为纵向排列 */
-        padding: 10px 0; /* 减少内边距 */
+        flex-direction: column;
+        padding: 10px 0;
     }
 
     nav ul li {
-        margin: 10px 0; /* 调整选项卡间距 */
+        margin: 10px 0;
     }
 
     .hero-text h1 {
-        font-size: 40px; /* 减小标题字体大小 */
+        font-size: 40px;
     }
 
     .hero-text h2 {
-        font-size: 30px; /* 减小副标题字体大小 */
+        font-size: 30px;
     }
 
     .hero-text p {
-        font-size: 16px; /* 调整段落字体大小 */
+        font-size: 16px;
     }
 
     .social-icons img {
-        width: 25px; /* 减小图标大小 */
+        width: 25px;
         height: 25px;
     }
 }
 
-/* 针对屏幕宽度小于480px的设备（更小的手机） */
 @media (max-width: 480px) {
     nav ul {
-        padding: 5px 0; /* 进一步减少内边距 */
+        padding: 5px 0;
     }
 
     .hero-text h1 {
-        font-size: 30px; /* 更小的标题字体 */
+        font-size: 30px;
     }
 
     .hero-text h2 {
-        font-size: 24px; /* 更小的副标题字体 */
+        font-size: 24px;
     }
 
     .hero-text p {
-        font-size: 14px; /* 调整段落字体大小 */
+        font-size: 14px;
     }
 
     .social-icons img {
-        width: 20px; /* 进一步减小图标大小 */
+        width: 20px;
         height: 20px;
     }
 }
