@@ -6,10 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* 将背景图片应用到整个页面 */
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* 使背景图片在滚动时保持固定 */
+    background-attachment: fixed; 
     color: #333;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    flex-grow: 1; /* 使主内容区域撑开页面 */
+    flex-grow: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,9 +83,9 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: transparent; /* 保持透明背景，和整个页面一致 */
+    background-color: transparent; 
     font-size: 14px;
-    color: white; /* 保持文字颜色和页面一致 */
+    color: white; /
     width: 100%;
     position: relative;
     bottom: 0;
@@ -99,8 +99,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-/* -------- 媒体查询保持不变 -------- */
 
 @media (max-width: 768px) {
     nav ul {
