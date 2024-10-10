@@ -29,10 +29,11 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    flex-wrap: wrap; 
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -79,13 +80,12 @@ nav ul li a:hover {
     height: 30px;
 }
 
-/* Footer 部分无缝连接背景 */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: transparent; 
+    background-color: transparent;
     font-size: 14px;
-    color: white; /
+    color: white;
     width: 100%;
     position: relative;
     bottom: 0;
@@ -100,14 +100,18 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
         padding: 10px 0;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0 5px; 
+    }
+
+    nav ul li a {
+        font-size: 14px; 
     }
 
     .hero-text h1 {
@@ -131,6 +135,14 @@ footer a:hover {
 @media (max-width: 480px) {
     nav ul {
         padding: 5px 0;
+    }
+
+    nav ul li {
+        margin: 0 3px; 
+    }
+
+    nav ul li a {
+        font-size: 12px;
     }
 
     .hero-text h1 {
