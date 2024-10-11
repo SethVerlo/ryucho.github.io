@@ -30,7 +30,7 @@ nav ul {
     justify-content: center;
     padding: 20px 0;
     gap: 30px; /* 使用gap来增加导航项之间的间距 */
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
 }
 
 nav ul li {
