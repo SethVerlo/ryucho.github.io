@@ -27,7 +27,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around; /* 使导航项两边均匀分布 */
+    justify-content: space-bewteen; /* 使导航项两边均匀分布 */
     padding: 20px 0;
     flex-wrap: wrap; 
 }
