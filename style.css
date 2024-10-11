@@ -29,7 +29,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    gap: 20px; /* 使用gap来增加导航项之间的间距 */
+    gap: 10px; /* 使用gap来增加导航项之间的间距 */
     flex-wrap: wrap; 
 }
 
