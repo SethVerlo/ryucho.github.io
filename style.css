@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -103,14 +103,13 @@ footer a:hover {
 }
 
 
-
 @media (max-width: 768px) {
     nav ul {
         padding: 10px 0;
     }
 
     nav ul li {
-        margin: 0 5px; 
+        margin: 0 10px;
     }
 
     nav ul li a {
@@ -135,13 +134,14 @@ footer a:hover {
     }
 }
 
+/* 针对小屏幕的媒体查询 */
 @media (max-width: 480px) {
     nav ul {
         padding: 5px 0;
     }
 
     nav ul li {
-        margin: 0 3px; 
+        margin: 0 5px; 
     }
 
     nav ul li a {
