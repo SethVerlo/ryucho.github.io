@@ -27,9 +27,8 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* 使导航项两边均匀分布 */
     padding: 20px 0;
-    gap: 50px; /* 使用gap来增加导航项之间的间距 */
     flex-wrap: wrap; 
 }
 
