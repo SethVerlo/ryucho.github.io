@@ -81,7 +81,7 @@ nav ul li a:hover {
 }
 
 footer {
-    text-align: center; /* 使内容居中 */
+    text-align: center; 
     padding: 20px;
     background-color: transparent;
     font-size: 14px;
@@ -90,7 +90,7 @@ footer {
 }
 
 .footer-container p {
-    margin: 5px 0; /* 每行之间的间距 */
+    margin: 5px 0; 
 }
 
 footer a {
