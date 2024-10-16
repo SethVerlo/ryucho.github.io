@@ -27,9 +27,9 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between; /* 使导航项两边均匀分布 */
-    padding: 20px 0;
-    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 20px 40px; 
+    flex-wrap: nowrap; 
 }
 
 nav ul li {
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1abc9c;
+    color: white; /* 鼠标悬浮时字体颜色改为白色 */
 }
 
 .hero {
@@ -105,7 +105,7 @@ footer a:hover {
 /* 针对中等屏幕的媒体查询 */
 @media (max-width: 768px) {
     nav ul {
-        padding: 10px 0;
+        padding: 10px 20px; /* 在中等屏幕时缩小左右内边距 */
         gap: 20px; /* 在中等屏幕时缩小间距 */
     }
 
@@ -134,7 +134,7 @@ footer a:hover {
 /* 针对小屏幕的媒体查询 */
 @media (max-width: 480px) {
     nav ul {
-        padding: 5px 0;
+        padding: 5px 10px; /* 在小屏幕时进一步缩小内边距 */
         gap: 10px; /* 在小屏幕时进一步缩小间距 */
     }
 
